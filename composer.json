@@ -10,7 +10,7 @@
     }
   ],
   "require": {
-    "php": ">=8.2",
+    "php": ">=8.4",
     "api-platform/symfony": "^4.2",
     "doctrine/orm": "^3.5",
     "doctrine/doctrine-bundle": "^3.1",
@@ -18,7 +18,7 @@
     "symfony/dependency-injection": "*"
   },
   "require-dev": {
-    "phpunit/phpunit": "^9.5.2"
+    "phpunit/phpunit": "^10.5"
   },
   "prefer-stable": true,
   "autoload": {
