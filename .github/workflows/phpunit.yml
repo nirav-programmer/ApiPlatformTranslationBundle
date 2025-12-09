@@ -28,7 +28,7 @@ jobs:
         restore-keys: |
           ${{ runner.os }}-php-
     - name: Install Dependencies
-      run: composer install --no-interaction --no-scripts --prefer-dist -vvv
+      run: composer install --no-interaction --prefer-dist
     - name: Create Database
       run: |
         mkdir -p data
@@ -36,4 +36,4 @@ jobs:
     - name: Execute tests (Unit and Feature tests) via PHPUnit
       env:
         DATABASE_URL: sqlite:///%kernel.project_dir%/data/database.sqlite
-      run: vendor/bin/phpunit --display
+      run: vendor/bin/phpunit --testdox --colors=always
